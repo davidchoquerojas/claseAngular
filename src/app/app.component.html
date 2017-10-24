@@ -2,6 +2,7 @@
   <div class="col-md-3">
   </div>
   <div class="col-md-6">
+      <app-tabla (enviarDatos)="recibirDatos($event)"></app-tabla>
       <form class="form-horizontal">
           <div class="form-group">
             <label>Nombre</label><br>
@@ -21,13 +22,13 @@
           <div class="form-group">
             <label>Estado</label><br>
             <div class="radio" >
-                <label><input type="radio" name="estado" [(ngModel)]="oPersona.estado" value="S">Soltero</label>
+                <label><input type="radio" name="estado_civil" [(ngModel)]="oPersona.estado_civil" value="S">Soltero</label>
               </div>
               <div class="radio">
-                <label><input type="radio" name="estado" [(ngModel)]="oPersona.estado" value="C">Casado</label>
+                <label><input type="radio" name="estado_civil" [(ngModel)]="oPersona.estado_civil" value="C">Casado</label>
               </div>
               <div class="radio">
-                <label><input type="radio" name="estado" [(ngModel)]="oPersona.estado" value="D">Divorciado</label>
+                <label><input type="radio" name="estado_civil" [(ngModel)]="oPersona.estado_civil" value="D">Divorciado</label>
               </div>
           </div>
 
@@ -38,7 +39,6 @@
           <button (click)="mostrar()">Enviar</button>
         </form>
         <pre></pre>
-        <app-tabla></app-tabla>
   </div>
   <div class="col-md-3"></div>
 </div>

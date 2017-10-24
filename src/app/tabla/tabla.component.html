@@ -1,3 +1,25 @@
-<p>
-  tabla works!
-</p>
+<table class="table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Nombre</th>
+      <th>Apellido</th>
+      <th>Genero</th>
+      <th>estado_civil</th>
+      <th>edad</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>  
+  <tbody>
+    <tr *ngFor="let persona of oListPersonas;let i = index">
+      <td>{{persona.id}}</td>
+      <td>{{persona.nombre}}</td>
+      <td>{{persona.apellido}}</td>
+      <td>{{persona.genero}}</td>
+      <td>{{persona.estado_civil}}</td>
+      <td>{{persona.edad}}</td>
+      <td><button class="btn btn-danger" (click)="eliminarPersona(persona.id)">X</button></td>
+      <td><button class="btn btn-info" (click)="editarPersonaPersona(persona)">...</button></td>
+    </tr>
+  </tbody>
+</table>

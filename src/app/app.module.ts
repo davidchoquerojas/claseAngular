@@ -5,6 +5,10 @@ import { FormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
 import { TablaComponent } from './tabla/tabla.component';
 
+import { AppService } from './app.service';
+import { HttpModule } from '@angular/http';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -12,9 +16,10 @@ import { TablaComponent } from './tabla/tabla.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpModule
   ],
-  providers: [],
+  providers: [AppService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

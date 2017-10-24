@@ -1,0 +1,44 @@
+{
+  "personas": [
+    {
+      "id": 1,
+      "nombre": "David Noe",
+      "apellido": "CHOQUE ROJAS",
+      "edad": 30,
+      "estado_civil": "S",
+      "genero": "M"
+    },
+    {
+      "id": 4,
+      "nombre": "Yean Carlos v2",
+      "apellido": "CHOQUE ROJAS",
+      "edad": 22,
+      "estado_civil": "D",
+      "genero": "M"
+    },
+    {
+      "id": 7,
+      "nombre": "Maria del bario v2",
+      "apellido": "CHOQUE ROJAS",
+      "edad": 12,
+      "estado_civil": "C",
+      "genero": "F"
+    },
+    {
+      "id": 9,
+      "nombre": "Yean Carlos",
+      "apellido": "CHOQUE ROJAS",
+      "edad": 22,
+      "estado_civil": "S",
+      "genero": "M"
+    },
+    {
+      "id": 10,
+      "nombre": "Familia Peluche",
+      "apellido": "Peluche 2",
+      "edad": 23,
+      "estado_civil": "S",
+      "genero": "F"
+    }
+  ]
+}
