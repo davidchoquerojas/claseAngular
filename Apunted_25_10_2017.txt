@@ -1,0 +1,10 @@
+Notas Clase Nro:3
+
+1._ Clase de hoy Form- buielder
+2._ FormGroup
+3._ FormBuilder
+4._ Validators:se nombra a los campos a que seran requeridos o cumplan alguna regla
+4.1._ Agregar el tag [formGroup] en le formulario
+4.2._ Agregar el tag formControlName por cada campo del formulario
+4.3.- Adicionar un DIV de mensajes si el formulario no cumple las reglas
+5._ Implementar Routes. "Rutas para mostrar componentes"

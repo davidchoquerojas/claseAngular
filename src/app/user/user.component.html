@@ -1,0 +1,111 @@
+<div class="row">
+  <div class="col-md-3">
+  </div>
+  <div class="col-md-6">
+      <app-tabla (enviarDatos)="recibirDatos($event)"></app-tabla>
+      <form class="form-horizontal" [formGroup]="oPersonaForm">
+          <div class="form-group">
+            <label>Nombre</label><br>
+            <input type="text" class="form-control" name="nombre" formControlName="nombre">
+            <div class="error alert-warning" *ngIf="oPersonaForm.get('nombre').touched && oPersonaForm.get('nombre').hasError('required')">
+              Nombre  es required
+            </div>
+          </div>
+          <div class="form-group">
+              <label>Apellido</label><br>
+              <input type="text" class="form-control" name="apellido" formControlName="apellido" className="(oPersonaForm.get('apellido').touched && oPersonaForm.get('apellido').hasError('required')):'has-error',''" >
+            </div>
+          <div class="form-group">
+            <label>Genero</label><br>
+            <select class="form-control" name="genero" formControlName="genero">
+              <option>M</option>
+              <option>F</option>
+            </select>
+            <div class="error alert alert-warning" *ngIf="oPersonaForm.get('genero').touched && oPersonaForm.get('genero').hasError('required')">
+              Genero is required
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Estado</label><br>
+            <div class="radio" >
+                <label><input type="radio" name="estado_civil" formControlName="estado_civil" value="S">Soltero</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="estado_civil" formControlName="estado_civil" value="C">Casado</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="estado_civil" formControlName="estado_civil" value="D">Divorciado</label>
+              </div>
+              <div class="error alert alert-warning" *ngIf="oPersonaForm.get('estado_civil').touched && oPersonaForm.get('estado_civil').hasError('required')">
+                        Estado es requirido
+              </div>
+          </div>
+
+          <div class="form-group">
+            <label>Edad</label>
+            <input type="number" class="form-control" name="edad" formControlName="edad">
+            <div class="error" *ngIf="oPersonaForm.get('edad').touched && oPersonaForm.get('edad').hasError('required')">
+              Edad es reuirido
+            </div>
+          </div>
+          <button [disabled]="oPersonaForm.invalid" (click)="send(oPersonaForm.value)">Enviar</button>
+        </form>
+        <pre></pre>
+  </div>
+  <div class="col-md-3"></div>
+</div><div class="row">
+  <div class="col-md-3">
+  </div>
+  <div class="col-md-6">
+      <app-tabla (enviarDatos)="recibirDatos($event)"></app-tabla>
+      <form class="form-horizontal" [formGroup]="oPersonaForm">
+          <div class="form-group">
+            <label>Nombre</label><br>
+            <input type="text" class="form-control" name="nombre" formControlName="nombre">
+            <div class="error alert-warning" *ngIf="oPersonaForm.get('nombre').touched && oPersonaForm.get('nombre').hasError('required')">
+              Nombre  es required
+            </div>
+          </div>
+          <div class="form-group">
+              <label>Apellido</label><br>
+              <input type="text" class="form-control" name="apellido" formControlName="apellido" className="(oPersonaForm.get('apellido').touched && oPersonaForm.get('apellido').hasError('required')):'has-error',''" >
+            </div>
+          <div class="form-group">
+            <label>Genero</label><br>
+            <select class="form-control" name="genero" formControlName="genero">
+              <option>M</option>
+              <option>F</option>
+            </select>
+            <div class="error alert alert-warning" *ngIf="oPersonaForm.get('genero').touched && oPersonaForm.get('genero').hasError('required')">
+              Genero is required
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Estado</label><br>
+            <div class="radio" >
+                <label><input type="radio" name="estado_civil" formControlName="estado_civil" value="S">Soltero</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="estado_civil" formControlName="estado_civil" value="C">Casado</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="estado_civil" formControlName="estado_civil" value="D">Divorciado</label>
+              </div>
+              <div class="error alert alert-warning" *ngIf="oPersonaForm.get('estado_civil').touched && oPersonaForm.get('estado_civil').hasError('required')">
+                        Estado es requirido
+              </div>
+          </div>
+
+          <div class="form-group">
+            <label>Edad</label>
+            <input type="number" class="form-control" name="edad" formControlName="edad">
+            <div class="error" *ngIf="oPersonaForm.get('edad').touched && oPersonaForm.get('edad').hasError('required')">
+              Edad es reuirido
+            </div>
+          </div>
+          <button [disabled]="oPersonaForm.invalid" (click)="send(oPersonaForm.value)">Enviar</button>
+        </form>
+        <pre></pre>
+  </div>
+  <div class="col-md-3"></div>
+</div>

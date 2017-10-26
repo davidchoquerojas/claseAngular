@@ -39,6 +39,22 @@
       "edad": 23,
       "estado_civil": "S",
       "genero": "F"
+    },
+    {
+      "id": 11,
+      "nombre": "",
+      "apellido": "",
+      "edad": 0,
+      "estado_civil": "",
+      "genero": ""
+    },
+    {
+      "id": 12,
+      "nombre": "",
+      "apellido": "",
+      "edad": 0,
+      "estado_civil": "",
+      "genero": ""
     }
   ]
 }
